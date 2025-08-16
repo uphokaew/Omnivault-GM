@@ -63,7 +63,7 @@ impl Parse for CreateCallback {
 pub fn create_callback(input: TokenStream) -> TokenStream {
     let callback = parse_macro_input!(input as CreateCallback);
     let user_func_name = callback.name;
-    let orig_callback_name = Ident::new(&format!("OMPRS_{user_func_name}"), user_func_name.span());
+    let orig_callback_name = Ident::new(&format!("OMPGDK_{user_func_name}"), user_func_name.span());
     let mut orig_callback_params = Vec::new();
     let user_func_name = convert_to_snake_case(user_func_name);
     let mut user_func_args = Vec::new();

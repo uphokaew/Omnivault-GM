@@ -57,7 +57,7 @@ impl Parse for CreateNative {
 pub fn create_native(input: TokenStream) -> TokenStream {
     let native = parse_macro_input!(input as CreateNative);
     let name = native.name;
-    let orig_name = Ident::new(&format!("OMPRS_{}", name), name.span());
+    let orig_name = Ident::new(&format!("OMPGDK_{}", name), name.span());
     let return_type = native.return_type;
 
     let mut param_list = Vec::new();

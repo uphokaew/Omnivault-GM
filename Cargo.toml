@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "omp-gdk",
+    "omp-codegen",
+    "omp",
+    "gamemode/grandlarc"
+]
+resolver = "2"

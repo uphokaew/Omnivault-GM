@@ -1,0 +1,7 @@
+[submodule "open.mp-sdk"]
+	path = open.mp-sdk
+	url = https://github.com/openmultiplayer/open.mp-sdk/
+
+[submodule "omprs"]
+	path = omprs
+	url = https://github.com/Sreyas-Sreelal/omprs.git
